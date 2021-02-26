@@ -420,9 +420,6 @@ class ProviderService
 
                 foreach ($groups as $k => $v) {
                     if(is_object($v)) {
-                        if(!isset($v->gid)) {
-                            continue;
-                        }
                         if (empty($v->gid)) {
                             continue;
                         }
